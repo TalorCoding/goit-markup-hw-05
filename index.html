@@ -17,12 +17,12 @@
     <!--Шапка сайту-->
 
     <header class="header">
-        <div class="header-container">
+        <div class="container header-nav">
         <a href="./index.html" class="header-logo">Web<span class="header-logo-sep">Studio</span></a>
-        <nav class="header-nav">
+        <nav class="nav-header">
         <ul class="list header-list-1">
             <li class="header-link">
-                <a href="./index.html">Студия</a>
+                <a href="./index.html" class="header-word current">Студия</a>
             </li>
             <li class="header-link">
                 <a href="./portfolio.html">Портфолио</a>
@@ -66,7 +66,7 @@
     <h1 class="hero-title">
         Эффективные решения для вашего бизнеса
     </h1>
-    <button type="button" class="hero-btn">Заказать услугу</button>
+    <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
 </div>
 </div>
 
@@ -124,9 +124,9 @@
     <div class="container">
     <h2 class="section-2-title">Чем мы занимаемся</h2>
     <ul class="list section-2-list">
-    <li class="section-2-item"><img class="image" src="./images/img1.jpg" alt="Компьютерные технологии" width="370" height="294"></li>
-    <li class="section-2-item"><img class="image" src="./images/img2.jpg" alt="Мобильные технологии" width="370" height="294"></li>
-    <li class="section-2-item"><img class="image" src="./images/img3.jpg" alt="Графические технологии" width="370" height="294"></li>
+    <li class="section-2-item"><img class="image" src="./images/img1.jpg" alt="Компьютерные технологии" width="370" height="294"> <p class="section-2-text">Десктопные приложения</p></li>
+    <li class="section-2-item"><img class="image" src="./images/img2.jpg" alt="Мобильные технологии" width="370" height="294"> <p class="section-2-text">Мобильные приложения</p></li>
+    <li class="section-2-item"><img class="image" src="./images/img3.jpg" alt="Графические технологии" width="370" height="294"> <p class="section-2-text">Дизайнерские решения</p></li>
     </ul>
 </div>
 </section>
@@ -317,7 +317,7 @@
 </section>
 
 </main>
-</body>
+
 
 <!--Підвал сайту-->
 <footer class="footer">
@@ -365,5 +365,12 @@
     </address>
 </div>
 </footer>
+</body>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-close" data-modal-close><img src="./images/close.png" class="cross" alt="Close"></button>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
 
 </html>
