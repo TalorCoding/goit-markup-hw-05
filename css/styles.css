@@ -342,6 +342,10 @@ margin-bottom: 50px;
     gap: 30px;
 }
 
+.section-2-card {
+    position: relative;
+}
+
 .section-2-text {
     font-weight: 700;
 font-size: 14px;
@@ -354,11 +358,11 @@ color: #FFFFFF;
 display: flex;
 justify-content: center;
 align-items: center;
-
+transform: translateY(-70px);
 width: 370px;
 height: 70px;
-position: relative;
-bottom: 70px;
+position: absolute;
+
 background: rgba(47, 48, 58, 0.8);
 overflow: hidden;
 }
